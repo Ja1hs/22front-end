@@ -1,0 +1,58 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>espace client</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    </head>
+    <body>
+        <section class="container">
+        <form class="formulaire">
+            <div >
+            <h1>connexion au compte</h1>
+            <p class="choose-email">ou utiliser mon e-mail :</p>
+<div >
+            <div class="inputs">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="mot de passe">
+                <button type="submit" class="button" id ="login" title="Se connecter">Se connecter</button>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col">
+                    <hr class="one"><input type="checkbox" name="remember me" class="rememberme">
+                    <label for="remeberme" class="checkbox">rester connecter</label><hr class="two">
+                    <p href="#" onclick="afficher()" class="btn-inscription">creér un nouveau <span>compte</span></p>
+                </div>
+            </section>
+            </form>
+            </div>
+            <section class="inscription">
+                <form action="">
+                    <i onclick="afficher()" class="fa-regular fa-circle-xmark"></i>
+                    <h1>S'inscrire</h1>
+                    <h4>en moins de 2 min</h4>
+                    <div class="input-nom-prenom">
+                        <input type="text" placeholder="Prenom">
+                        <input type="text" class="nim-mdp" placeholder="Nom de famille">
+                    </div>
+                    <input type="email" name="" class="email" placeholder="Email">
+                    <div>
+                    <input type="password" name="" class="num-mdp" placeholder="mot de passe">
+                    <input type="password" name="" class="num-mdp" placeholder="confirmer le mot de passe">
+                </div>
+                <button type="submit" class="button" title="S'inscrire">S'inscrire</button>
+            </section>
+        </div>
+        </form>
+        <script>
+            function afficher(){
+                document.querySelector('.inscription').classList.toggle('active');
+            }
+        </script>
+    </body>
+    </html>
